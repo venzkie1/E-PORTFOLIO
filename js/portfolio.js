@@ -44,7 +44,7 @@ ScrollReveal({
     // comment out or don't include reset: true so animation upon scrolling back up doesn't automate or work
 
     // reset: true,
-    distance: '80px',
+    distance: '5px',
     duration: 2000,
     delay: 200
 });
@@ -53,8 +53,10 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .skills-container, .project-box, .contact form, .exercises-box',  { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
+ScrollReveal().reveal('.home-content h1', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.about-img', { origin: 'right' });
+
 
 
 // typed js
