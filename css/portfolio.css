@@ -97,9 +97,15 @@ section{
 /* home image animation and size */
 .home-img img {
     width: 35vw;
+    border-radius: 30rem;
     /* asign keyframe name floatImage */
     animation: floatImage 4s ease-in-out infinite;
 }
+.about-img img {
+    width: 35vw;
+    border-radius: 5rem;
+}
+
 .emo img{
     width: 1.5vw;
     animation: floatEmo 10s ease-in-out infinite;
@@ -339,6 +345,11 @@ span{
 {
     color: var(--css-color);
 }
+.gitLink{
+    color: var(--othertext-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
 
 /* skills-box h3 tag font size */
 .skills-box h3{
@@ -370,15 +381,10 @@ span{
     gap: 2.5rem;
 }
 
-/* image number 3 and 4 size (2 projects)*/
-#image3, #image4{
-    width: 40vw;
-}
-
 /* project container and project-box positioning and styling */
 .project-container .project-box{
     position: relative;
-    border-radius: 2rem;
+    border-radius: 5rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
@@ -444,6 +450,88 @@ span{
 .project-layer a i{
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+/* exercises h2 margin */
+.exercises h2{
+    margin-bottom: 4rem;
+}
+
+/* exercises container alignment, grid template and display */
+.exercises-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+/* exercises container and exercises-box positioning and styling */
+.exercises-container .exercises-box{
+    position: relative;
+    border-radius: 5rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+/* exercises-box img size and transition upon hover */
+.exercises-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+/* exercises-box and exercises-layer positioning, alignment and styling */
+.exercises-box .exercises-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+/* exercises box hover effect and project layer transformation effect */
+.exercises-box:hover .exercises-layer{
+    transform: translateY(0);
+}
+
+/* exercises layer h4 tag size */
+.exercises-layer h4{
+    font-size: 3rem;
+}
+
+/* exercises layer p tag size */
+.exercises-layer p{
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+
+/* exercises layer a tag alignment, display and styling */
+.exercises-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+/* exercises-layer a tag icon tag size and color */
+.exercises-layer a i{
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+/* exercises-box img hover effect */
+.exercises-box:hover img{
+    transform: scale(1.1);
 }
 
 /* contact h2 margin bottom */
@@ -565,6 +653,9 @@ input::-webkit-inner-spin-button {
     .project {
         padding-bottom: 7rem;
     }
+    .exercises{
+        padding-bottom: 7rem;
+    }
 
     .contact {
         min-height: auto;
@@ -644,6 +735,14 @@ input::-webkit-inner-spin-button {
     .project-container {
         grid-template-columns: repeat(2, 1fr);
     }
+    .exercises h2{
+        margin-bottom: 3rem;
+    }
+
+    .exercises-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
 }
 
 
@@ -652,6 +751,9 @@ input::-webkit-inner-spin-button {
 @media (max-width: 617px)
 {
     .project-container{
+        grid-template-columns: 1fr;
+    }
+    .exercises-container{
         grid-template-columns: 1fr;
     }
 }
