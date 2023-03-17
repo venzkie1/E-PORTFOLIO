@@ -664,6 +664,12 @@ input::-webkit-inner-spin-button {
     .footer {
         padding: 2rem 3%;
     }
+    .emo img{
+        width: 2vw;
+    }
+    .emo1 img{
+        width: 2vw;
+    }
 
 }
 
@@ -742,7 +748,12 @@ input::-webkit-inner-spin-button {
     .exercises-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+    .emo img{
+        width: 2.5vw;
+    }
+    .emo1 img{
+        width: 2.5vw;
+    }
 }
 
 
@@ -756,6 +767,12 @@ input::-webkit-inner-spin-button {
     .exercises-container{
         grid-template-columns: 1fr;
     }
+    .emo img{
+        width: 3.5vw;
+    }
+    .emo1 img{
+        width: 3.5vw;
+    }
 }
 
 
@@ -768,6 +785,18 @@ input::-webkit-inner-spin-button {
 
     .contact form .input-box input {
         width: 100%;
+    }
+    .emo img{
+        width: 1.5vw;
+    }
+    .emo1 img{
+        width: 1.5vw;
+    }
+    .emo img{
+        width: 3.5vw;
+    }
+    .emo1 img{
+        width: 3.5vw;
     }
 }
 
@@ -791,5 +820,11 @@ input::-webkit-inner-spin-button {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+    .emo img{
+        width: 2.2vw;
+    }
+    .emo1 img{
+        width: 2.2vw;
     }
 }
