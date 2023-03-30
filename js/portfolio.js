@@ -75,5 +75,29 @@ const typed = new Typed('.multiple-text', {
 
 
 
+//trigger event when clicked
+ document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // generate the email parameters
+    const serviceID = 'service_xmm7jcn'; 
+    const templateID = 'template_xqrwb6d'; 
+    const templateParams = {
+       name: document.getElementById('name').value,
+       email: document.getElementById('email').value,
+       mobile: document.getElementById('mobile').value,
+       subject: document.getElementById('subject').value,
+       message: document.getElementById('message').value
+    };
+    // send the email
+    emailjs.send(serviceID, templateID, templateParams)
+       .then(function(response) {
+          alert('Your message has been sent!');
+       }, function(error) {
+          alert('Error: ' + error.status + ' ' + error.text);
+       });
+ });
+
+
+
 
 

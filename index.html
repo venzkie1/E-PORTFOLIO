@@ -97,6 +97,13 @@
                 <p>is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.</p>
                 <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank" class="btn btn3">Read More</a>
             </div>
+
+            <div class="skills-box box4">
+                <i class='bx bxl-react'></i>
+                <h3 class="react">REACT</h3>
+                <p>is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS" target="_blank" class="btn btn4">Read More</a>
+            </div>
         </div>
     </section>
 
@@ -121,6 +128,15 @@
                 <img id="image4" src="images/portfolio.png" alt="">
                 <div class="project-layer">
                     <h4>Portfolio</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nihil, non distinctio architecto fugit enim quibusdam placeat accusamus rem libero.</p>
+                    <a href="https://github.com/venzkie1/venzkie1.github.io-E-Portfolio" target="_blank"><i class='bx bxl-github'></i></a>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img id="image4" src="images/origin.png" alt="">
+                <div class="project-layer">
+                    <h4>Origin Swift</h4>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nihil, non distinctio architecto fugit enim quibusdam placeat accusamus rem libero.</p>
                     <a href="https://github.com/venzkie1/venzkie1.github.io-E-Portfolio" target="_blank"><i class='bx bxl-github'></i></a>
                 </div>
@@ -158,15 +174,6 @@
             </div>
 
             <div class="exercises-box">
-                <img id="image4" src="images/origin.png" alt="">
-                <div class="exercises-layer">
-                    <h4>Origin Swift</h4>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nihil, non distinctio architecto fugit enim quibusdam placeat accusamus rem libero.</p>
-                    <a href="https://github.com/venzkie1/venzkie1.github.io-OriginSwift" target="_blank"><i class='bx bxl-github'></i></a>
-                </div>
-            </div>
-
-            <div class="exercises-box">
                 <img id="image4" src="images/sourcefinder.png" alt="">
                 <div class="exercises-layer">
                     <h4>Source Finder</h4>
@@ -192,19 +199,19 @@
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
 
-        <form action="#">
+        <form action="#" id="contact-form">
 
             <div class="input-box">
-                <input type="text" name="" id="" placeholder="Full Name" required>
-                <input type="email" name="" id="" placeholder="Email Address" required>
+                <input type="text" name="" id="name" placeholder="Full Name" required>
+                <input type="email" name="" id="email" placeholder="Email Address" required>
             </div>
 
             <div class="input-box">
-                <input type="number" name="" id="" placeholder="Mobile Number" required>
-                <input type="text" name="" id="" placeholder="Email Subject">
+                <input type="number" name="" id="mobile" placeholder="Mobile Number" required>
+                <input type="text" name="" id="subject" placeholder="Email Subject">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">  
 
         </form>
 
@@ -226,6 +233,15 @@
 
     <!-- type JS -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
+    <script>
+        (function(){
+        emailjs.init("MjDv6p1dqsen4dcKA");
+        })();
+    </script>
 
     <!-- custom js -->
     <script src="js/portfolio.js"></script>
